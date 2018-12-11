@@ -65,6 +65,7 @@ namespace Integral
             b = Convert.ToInt32(this._b.Text);
             if (Convert.ToDouble(_a.Text) >= Convert.ToDouble(_b.Text))
             {
+                //Здесь был cepera1029. Это типо коментарий...
                 MessageBox.Show("Нижняя граница не должна превышать или быть равной верхней");
                 return false;
             }
@@ -76,7 +77,7 @@ namespace Integral
 
 
 
-
+        //Тут еще один коментарий...
         void Default()
         {
             _resultText.Text = "";
