@@ -44,6 +44,7 @@ namespace Integral
             double a = 1;
             double b = 100000;
             Stopwatch timer = new Stopwatch();
+            //Расчёт параллельного интеграла
             if (_check.IsChecked.Value == true) {
                 timer.Start();
                 In = integral.calcParr(n, a, b, x => 32 * x - Math.Log10(2 * x) - 41);
@@ -52,6 +53,7 @@ namespace Integral
                 this._timeText.Text = Convert.ToString(timer.ElapsedMilliseconds);
                 timer.Reset();
             }
+            //Расчёт последовательного интеграла
             if (_check.IsChecked.Value == false)
             {
                 timer.Start();
