@@ -24,7 +24,7 @@ namespace Integral
 
         //Func<double,double>func = x => x*x;
 
-        public double calcPosl(int n, double a, double b, Func<double, double> f)
+        public double calcPosl(int n, double a, double b, Func<double, double> f)// calculating Integral.single process variant 
         {
             y = 0;
             dy = (b - a) / n;
@@ -39,7 +39,7 @@ namespace Integral
             return In = I(a, b, n, y);
         }
 
-        public double calcParr(int n, double a, double b, Func<double, double> f)
+        public double calcParr(int n, double a, double b, Func<double, double> f)// calculating Integral.multy process variant 
         {
             object monitor = new object();
             y = 0;
